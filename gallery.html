@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Prabhsimran Singh Mann</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .zoom-effect {
+            transition: transform 0.3s ease-in-out;
+        }
+        .zoom-effect:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <nav class="bg-gray-800 p-4 shadow-lg">
+        <ul class="flex justify-center space-x-6">
+            <li><a href="index.html" class="text-white hover:text-blue-400">Home</a></li>
+            <li><a href="contact.html" class="text-white hover:text-blue-400">Contact</a></li>
+            <li><a href="gallery.html" class="text-white hover:text-blue-400">Gallery</a></li>
+            <li><a href="hobbies.html" class="text-white hover:text-blue-400">Hobbies</a></li>
+            <li><a href="other.html" class="text-white hover:text-blue-400">Other</a></li>
+            <li><a href="connect.html" class="text-white hover:text-blue-400">Connect</a></li>
+        </ul>
+    </nav>
+    
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <h1 class="text-4xl font-bold text-blue-400 mb-6">My Gallery</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
+            <img src="pictures/cat.jpg" alt="Photo 1" class="w-64 h-64 object-cover rounded-lg shadow-md zoom-effect">
+            <img src="pictures/cheetah.jpg" alt="Photo 2" class="w-64 h-64 object-cover rounded-lg shadow-md zoom-effect">
+            <img src="pictures/giraffe.jpg" alt="Photo 3" class="w-64 h-64 object-cover rounded-lg shadow-md zoom-effect">
+            <img src="pictures/panda.jpg" alt="Photo 4" class="w-64 h-64 object-cover rounded-lg shadow-md zoom-effect">
+            <img src="pictures/tiger.jpg" alt="Photo 5" class="w-64 h-64 object-cover rounded-lg shadow-md zoom-effect">
+        </div>
+    </div>
+</body>
+</html>
+

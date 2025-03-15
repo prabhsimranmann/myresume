@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <nav class="bg-gray-800 p-4 shadow-lg">
+        <ul class="flex justify-center space-x-6">
+            <li><a href="index.html" class="text-white hover:text-blue-400">Home</a></li>
+            <li><a href="contact.html" class="text-white hover:text-blue-400">Contact</a></li>
+            <li><a href="gallery.html" class="text-white hover:text-blue-400">Gallery</a></li>
+            <li><a href="hobbies.html" class="text-white hover:text-blue-400">Hobbies</a></li>
+            <li><a href="other.html" class="text-white hover:text-blue-400">Other</a></li>
+            <li><a href="connect.html" class="text-white hover:text-blue-400">Connect</a></li>
+        </ul>
+    </nav>
+    
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="max-w-lg p-8 bg-gray-800 rounded-2xl shadow-xl text-center">
+            <h1 class="text-4xl font-bold text-blue-400 mt-4">Contact Us</h1>
+            <p class="text-lg mt-2 text-gray-300">We’d love to hear from you!</p>
+            <form action="/submit-form" method="POST" class="mt-6 text-left space-y-4">
+                <div>
+                    <label for="name" class="text-lg text-gray-300">Your Name:</label><br>
+                    <input type="text" id="name" name="name" class="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="email" class="text-lg text-gray-300">Your Email:</label><br>
+                    <input type="email" id="email" name="email" class="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label for="message" class="text-lg text-gray-300">Your Message:</label><br>
+                    <textarea id="message" name="message" class="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Write your message here..." required></textarea>
+                </div>
+                <div class="mt-4">
+                    <button type="submit" class="w-full p-3 bg-blue-400 text-white rounded-lg hover:bg-blue-500">Send Message</button>
+                </div>
+            </form>
+
+            <h2 class="text-2xl font-semibold text-blue-400 mt-8">Contact Information</h2>
+            <div class="mt-4 text-gray-400">
+                <p>Email: prabh@example.com</p>
+                <p>Phone: +1 705 992 5821</p>
+                <p>Address: 123 Main Street, City, Country</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
